@@ -7,7 +7,7 @@ import java.util.Objects;
 
 //POJO: Plan Object Java Object
 @Entity
-//@Table(name = "tblProduct")
+@Table(name = "tblProduct")
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -21,7 +21,7 @@ public class Product {
 //            generator = "product_sequence"
 //    )
     private Long id;
-    @Column(nullable = false, unique = true, length = 300)
+//    @Column(nullable = false, unique = true, length = 300)
     private String productName;
     private int year;
     private Double price;
